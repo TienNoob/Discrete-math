@@ -59,8 +59,4 @@ void link(GP_Node &p, GP_Node &a, GP_Node &b)
     p.r = &b;
 }
 
-void crossover(GP_Node &a, GP_Node &b)
-{
-    
-}
 #endif
