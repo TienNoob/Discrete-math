@@ -1,4 +1,5 @@
 //Include guards
+//Define a node in GP Tree
 #ifndef GP_NODE_H
 #define GP_NODE_H
 
@@ -7,7 +8,7 @@ struct GP_Node
 {
     long double val; // Value of the node
     GP_Node *l, *r; // Left, right child
-    int t; // t == -1 : terminal, t >= 0: operator 
+    int t; // t < 0 : terminal, t > 0: operator 
     GP_Node ()
     {
         l = nullptr;
@@ -56,5 +57,10 @@ void link(GP_Node &p, GP_Node &a, GP_Node &b)
 {
     p.l = &a;
     p.r = &b;
+}
+
+void crossover(GP_Node &a, GP_Node &b)
+{
+    
 }
 #endif
